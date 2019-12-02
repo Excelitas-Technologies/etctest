@@ -1,0 +1,21 @@
+<!-- Let's output the three variables passed to this template -->
+
+
+
+{% for items in variable_jobs %}
+	{% if items %}
+		<div class="job-container" style="width: 100%; float: left;">
+			<div class="align-left">
+				<h1>{{ items.title }}</h1>
+				<p>{{ items.company ~ ' | ' ~ items.location  }}</p>
+				<p>{{ items.type }}</p>
+				<p>{{ items.created_at }}</p>
+
+				{{ items.description|raw }}
+			</div>
+			<hr>
+		</div>
+	{% endif %}
+{% endfor %}
+
+

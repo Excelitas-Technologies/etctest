@@ -1,0 +1,6 @@
+name: ETC Jobs
+description: Test module creating jobs page
+package: ETC
+type: module
+version: 1.x
+core: 8.x
